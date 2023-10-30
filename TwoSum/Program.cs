@@ -22,9 +22,8 @@ int[] TwoSum(int[] nums, int target)
     for (int i = 0; i < nums.Length; i++)
     {
         int num = nums[i];
-        for (int j = 0; j < nums.Length; j++)
+        for (int j = i + 1; j < nums.Length; j++)
         {
-            if (j == i) break;
 
             int toAdd = nums[j];
             if (num + toAdd == target)
